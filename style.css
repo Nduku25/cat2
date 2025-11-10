@@ -1,18 +1,15 @@
 .body{
-    background-color: rgba(127, 255, 212, 0.568);
+    background-color: rgb(184, 177, 177);
     text-align: center;
 
 }
 .header{
-    background-color: rgba(5, 107, 175, 0.61);
-    padding: 5px;
-    text-align: center;
-    border-radius: 5px;
-}
-.header li{
-    list-style: none;
-    display: inline;
+    display: flex; justify-content:  space-between;
+    align-items: center;
+    background-color: antiquewhite;
     padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
     
 }
 .login-box{
@@ -50,25 +47,134 @@
     padding: 10px;
 }
 .logo{
-    background-color:white ;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    font-size: bolder;
+
 }
 .nav-box{
+    gap: 20px;
+    display: flex;
+}
+.nav-box a{
+    text-decoration: none;
+    color: rgb(100, 104, 103);
+    transition: color 0.4s ease;
+}
+.nav-box a:hover{
+    color: blueviolet;
+}
+.title{
+    background-color:rgb(236, 228, 228) ;
+    padding: 3px;
+}
+.search-bar{
+display:flex;
+justify-content: center ;
+align-items:center;
+margin-top: 20px;
+}
+.search-box{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    background-color:aliceblue;
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 8px;
+    width: 90%;
+    max-width: 500px;
+}
+.search-icon{
+    font-size: 15px;
+    margin-left: 8px;
+    color: black;
+}
+.search-box input{
+    flex: 1;
+    font-size: 15px;
+    background-color: aliceblue;
+    outline: none;
+    border: none;
+}
+.searcg-by{
+    border: none;
+    background-color: aliceblue;
+    font-size: 16px;
+    color: black;
+    margin-right: 15px;
+    cursor:pointer;
+    outline: nones;
+}
+.apartment{
+    text-align: center;
+    padding: 5px;
+}
+.apartment h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.apartment-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    align-items: stretch;
+    justify-items: stretch;
     width: 100%;
 }
-nav ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
+@media screen and(max-width: 600px) {
+    .apartment-grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
 }
-nav a{
-    text-decoration:none;
-    color:black ;
-    font-weight: bold;
+.apartment-card{
+    background-color: thistle;
+    border-radius: 10px;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+.apartment-card:hover{
+    transform: translateY(-5px);
+
+}
+.apartment-card h3{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: black;
+
+}
+.apartment-card p{
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+.more{
+    background-color: brown;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    align-self: center;
+
+}
+.more:hover{
+    background-color: black;
+    color: wheat;
+}
+.footer{
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    margin: top 10px;
+    text-align: center;
+
 }
