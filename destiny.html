@@ -3,26 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>about destiny</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body">
+<body>
+    <!--Nav-->
+    <header class="navbar">
+    <div class="logo"><i><strong>levana Housing Agency</strong></i></div>
+    <nav class="nav-links">
+        <a href="home.html">home</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+        <a href="help.html">help</a><br>
 
-    <header class="header">
-    <div class="logo"><p><b>Levana Housing Agencies</b></p></div>
-    <nav class="nav-box">    
-            <a href="home.html">Home</a> 
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="help.html">Help</a> 
-     </nav>
-    </header>
+    </nav>
+</header>
 
-    <section class="title">                                                                                                                                                                                             
-        <h1>Destiny Apartments</h1>
-        <p><b>Here your comfort is our priority.</b></p>
-        <p><i class="fa fa-location-dot"></i> Along Meru Highway</p>
-    </section>      
+<!--heading-->
+<section class="heading">
+    <h1><i>Destiny</i></h1><br>
+    <p><i class="fa fa-location-dot"></i>Along Embu-Meru highway next to Camp Ndunda</p>
+</section>
+<!--images interiors-->
+<section class="image-slide">
+    <div class="image-container">
+        <button class="prev"><i class="fa fa-chevron-left"></i></button>
+        <div class="images">
+            <img src="images/destiny otd.jpeg outsite.jpeg" alt="Appartment 3">
+            <img src="images/destiny bed.jpeg" alt="bed">
+            <img src="images/destiny img1.jpeg" alt="img1">
+            <img src="images/destiny tlt.jpeg" alt="tlt">
+        </div>
+        <button class="next"><i class="fa fa-chevron-right"></i></button>
+    </div>
+</section>  
+<section class="description">
+    <h2 class="anime-h2"><i><u>Welcome to Your Next Home at Destiny Apartments</u></i></h2><br>
+    <p class="grand"><b>Destiny offers you:</b></p>
+    <ul>
+       <li>Enjoy the ease of secure, spacious parking designed to offer both convenience and complete peace of mind for you and your family.</li><br>
+<li>Unwind on your private balcony as you soak in breathtaking, panoramic views of the majestic Mount Kenya — a daily reminder of natural beauty and serenity.</li><br>
+<li>Immerse yourself in modern luxury with tastefully designed interiors that combine elegance, comfort, and refined craftsmanship in every corner.</li><br>
+<li>Feel safe and confident with our cutting-edge 24/7 security systems, providing a secure, calm, and private living experience day and night.</li><br>
+<li>Enjoy effortless living with a prime location just minutes from shopping malls, reputable schools, and advanced healthcare facilities — everything you need right at your doorstep.</li><br>
+    </ul>
+</section>  
+<section class="inquiry">
+    <h3>Make a Inquiry</h3>
+    <form class="inquiry-form">
+        <input type="text" name="fullname" placeholder="username" required><br>
+        <input type="email" name="email" placeholder="usermail" required><br>
+        <textarea name="massage" placeholder="I wish to rent with you..." rows="3" required></textarea><br>
+        <button class="btn" type="submit"><b>Send Inquiry</b></button>       
+    </form>
+</section>
+<footer class="footer">
+    <p>&copy; 2025 levanas Agencies| Desinged By Yvonne Nduku</p>
+</footer>
 </body>
+<script src="script.js"></script>
 </html>

@@ -3,83 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/ibs/font-awesome/6.5.0/css/all.min.css"/>
+    <title>levana housing page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
+
 </head>
-<body class="body">
+<body>
+    <!--Nav-->
+    <header class="navbar">
+    <div class="logo"><i><strong>Levanas Housing Agency</strong></i></div>
+    <nav class="nav-links">
+        <a href="home.html">home</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+        <a href="help.html">help</a>
+        <a href="#" id="logout">log-out</a>
+    </nav>
+</header>
 
-    <header class="header">
-    <div class="logo"><p><b>Levana Housing Agencies</b></p></div>
-    <nav class="nav-box">    
-            <a href="home.html">Home</a> 
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="help.html">Help</a> 
-     </nav>
-    </header>
+<!--heading-->
+<section class="heading">
+    <h2 class="type" id="greeting"></h2>
+    <h1 class="anime-h1"><i>Welcome to Levanas Housing Agency</i></h1><br>
+    <p><b>Here your get comfort and happiness </b></p><br>
+</section>
 
-    <section class="title">
-        <h2 id="greetings"></h2>
-        <h1>Welcome to Levana Housing Agencies</h1>
-        <p><b>At Levana's Agencies we value your comfort.</b></p>
-    </section>
-
-    <div class="search-bar">
-        <div class="search-box">
-            <span class="search-icon"><i class="fa-solid magnifying-glass"></i></span>
-            <input type="text" placeholder="search here...">
-            <select class="search-by">
-                <option value="location">Location</option>
-                <option value="budget">Budget</option>
-                <option value="both">Both</option>
-            </select>
-        </div>
+<!--seach icon-->
+<div class="search-container">
+    <div class="search-box">
+        <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+        <input type="text" placeholder="search here..."/>
+        <select class="search-by">
+            <option value="location">location</option>
+            <option value="budget">budget</option>
+            <option value="both">both</option>
+        </select>
     </div>
-    <section class="apartment">
-        <h2>Your comfort matters</h2>
-        <div class="apartment-grid">
-            <div class="apartment-card">
-                <h3>Destiny apartments</h3>
-                <p>KES.7000</p>
-                <p><b>bedsitters with a perfect blend of comfort,style and convenience.</b></p>
-                <a href="destiny.html"><button class="more">More</button></a>
-            </div>
-
-             <div class="apartment-card">
-                <h3>Serenity apartments</h3>
-                <p>KES.10000</p>
-                <p><b>1 bedroom ideal for a house with beautiful morning views.</b></p>
-                <a href="serenity.html"><button class="more">More</button></a>
-            </div>
-             <div class="apartment-card">
-                <h3>Sunrise apartments</h3>
-                <p>KES.8000</p>
-                <p><b>bedsitters friendly,welcoming and homely.</b></p>
-                <a href="sunrise.html"><button class="more">More</button></a>
-            </div>
-             <div class="apartment-card">
-                <h3>Blossom apartments</h3>
-                <p>KES.19000</p>
-                <p><b>2-bedroom sounds elegant and luxurios.</b></p>
-                <a href="blossom.html"><button class="more">More</button></a>
-            </div>
-             <div class="apartment-card">
-                <h3>The Pearl apartments</h3>
-                <p>KES.12000</p>
-                <p><b>1-bedroom perfect for a home surrounded by nature.</b></p>
-                <a href="pearl.html"><button class="more">More</button></a>
-            </div>
-             <div class="apartment-card">
-                <h3>Green Haven apartments</h3>
-                <p>KES.8000</p>
-                <p><b>bedsitters evokes peace and relaxation.</b></p>
-                <a href="green.html"ss><button class="more">More</button></a>
-            </div>
-         </div>
-    </section>
+</div>
+<!--card section-->
+<section class="rentals">
+<h2 class="anime-h2">Your next home awaits here with us</h2>
+<div class="rentals-grid">
+    <div class="rentals-card">
+        <h3>Destiny apartments</h3>
+        <img src="images/destiny otd.jpeg" alt="destiny otd">
+        <p>KES20000/Month</p>
+        <p><i> interact a 3-Bedroom apartment With elegant and spacious living room and an amazing leasurers balconies for evenings </i></p>
+        <a href="destiny.html"><button class="info">Details</button></a>
+    </div>
+    <div class="rentals-card">
+        <h3>Greenview plaza</h3>
+        <img src="images/green haven otd.jpeg" alt="Appartment 2">
+        <p>KES8500/Month</p>
+        <p><i>Bedsitters Appartments that redifine urban comfort and easy access to university of Embu-</i></p>
+        <a href="green.html"><button class="info">Details</button></a>
+        </div>
+    <div class="rentals-card">
+        <h3>Blossom apartments</h3>
+        <img src="images/blossom otd.jpeg" alt="Appartment 3">
+        <p>KES16000:Month</p>
+        <p><i>2-bedroom Appartments with modern interiors and ample parking and close to Embu-Meru highway</i></p>
+        <a href="blossom.html"><button class="info">Details</button></a>
+    </div>
+    <div class="rentals-card">
+        <h3>The Pearl</h3>
+        <img src="images/the pearl otd.jpeg" alt="Appartment 3">
+        <p>KES16000:Month</p>
+        <p><i>3-bedroom with contemporary living and spacious rooms well furnished</i></p>
+        <a href="pearl.html"><button class="info">Details</button></a>
+    </div>
+    <div class="rentals-card">
+        <h3>Serenity apartment</h3>
+        <img src="images/serenity otd.jpeg" alt="Appartment 3">
+        <p>KES30000/KES10000:Month</p>
+        <p><i>a 3-bedroom and Bedsitters flat with a spacious rooftop with a swimming pool ,  and the rooms are spacious and stanishing</i></p>
+        <p><i></i></p>
+        <a href="serenity.html"><button class="info">Details</button></a>
+    </div>
+    <div class="rentals-card">
+        <h3>Sunrise apartment</h3>
+        <img src="images/sunrise outsite.jpeg" alt="Appartment 3">
+        <p>KES75000:Month</p>
+        <p><i>Step into luxury livingq at sunrise . its an amazious Bedsitters that meets tenants needs  </i></p>
+        <a href="sunrise.html"><button class="info">Details</button></a>
+    </div><br> 
+    
     <footer class="footer">
-        <p>&copy 2025 LHA|Designed By Yvonne Nduku</p>
+        <p>&copy Levans Agency| Designed by Yvonne Nduku</p>
     </footer>
+<script src="script.js"></script>
 </body>
 </html>
