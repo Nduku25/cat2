@@ -75,14 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    // Display greeting on home.html
-    const greeting=document.getElementById("greeting");
-    const currentUser=JSON.parse(localStorage.getItem("currentUser"));
-    if(currentUser && greeting){
-        greeting.textContent=`Hello, ${currentUser.fullname}!`;
-    }
-    greeting.style.textAlign='center'
-});
+    // image slide
 const images = document.querySelector('.images');
 if (images) {
 const prevBtn = document.querySelector('.prev');
@@ -105,11 +98,11 @@ prevBtn.addEventListener('click', () => {
   showImage();
 });
 
-// Optional: auto-slide every 5 seconds
 setInterval(() => {
   nextBtn.click();
 }, 5000);
 }
+//logout
 const logout=document.getElementById("logout");
  if(logout){
   logout.addEventListener("click",function(e){
@@ -118,4 +111,4 @@ const logout=document.getElementById("logout");
     window.location.href="index.html";
   });
  };
- 
+});

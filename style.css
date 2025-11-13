@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     max-width: 100%;
+    position: relative;
 }
 body{
     background-color: grey;
@@ -25,7 +26,8 @@ body{
 
 }
   #greeting{
-    justify-content: center;
+    display: flex;
+    position: relative;
   width: 0ch;
   animation: typingH2 2.5s steps(20, end) forwards;
 }
