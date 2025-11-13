@@ -25,12 +25,6 @@ body{
     border-radius: 8px;
 
 }
-  #greeting{
-    display: flex;
-    position: relative;
-  width: 0ch;
-  animation: typingH2 2.5s steps(20, end) forwards;
-}
 /*--logo area--*/
 .logo{
     font-size: bolder;

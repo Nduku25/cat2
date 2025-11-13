@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    // image slide
+    // image slides
 const images = document.querySelector('.images');
 if (images) {
 const prevBtn = document.querySelector('.prev');
